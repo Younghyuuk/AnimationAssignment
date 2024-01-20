@@ -1,7 +1,7 @@
 class Slime {
     constructor(game) {
         this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./Run+Attack.png"), 0, 0, 120, 120, 10, 0.2);
+        this.animator = new Animator(ASSET_MANAGER.getAsset("./Run+Attack.png"), 0, 0, 122, 220, 10, 0.2);
     };
 
     update() {
@@ -9,7 +9,7 @@ class Slime {
     };
 
     draw(ctx) {
-    this.animator.drawFrame(this.game.clockTick, 25, 25);
+        this.animator.drawFrame(this.game.clockTick, ctx, 25, 25);
     };  
 
 }

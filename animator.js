@@ -7,11 +7,12 @@ class Animator {
 
 
     // sX, sY, sW, sH, dX, dY, dW, dH);
-    drawFrame(tick, ctx, x, y, scale) {
+    drawFrame(tick, ctx, x, y) {
 
         this.elapsedTime += tick;
         const frame = this.currentFrame();
-        drawImage(this.spritesheet, this.xStart + this.width * frame, this.yStart, this.width, this.height, x, y, this.width, this.height);
+        
+        ctx.drawImage(this.spritesheet, this.xStart + this.width * frame, this.yStart, this.width, this.height, x, y, this.width, this.height);
     };
 
 
