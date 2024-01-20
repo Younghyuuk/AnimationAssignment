@@ -5,7 +5,7 @@ class Slime {
         
         this.x = 0;
         this.y = 0;
-        this.speed = 25;
+        this.speed = 100;
     };
 
     update() {
